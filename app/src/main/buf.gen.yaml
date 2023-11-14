@@ -1,0 +1,13 @@
+version: v1
+managed:
+  enabled: true
+  java_multiple_files: true
+  java_package_prefix: "com.example.android.protobuftest.proto"
+plugins:
+  - plugin: java
+    out: java
+  - plugin: kotlin
+    out: java
+  - plugin: connect-kotlin
+    out: java
+    path: [ "java", "-jar", "./protoc-gen-connect-kotlin-0.3.1.jar", "$@" ]

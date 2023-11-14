@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        jcenter() // for flipper grpc plugin -> provide it via holding?
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // for flipper grpc plugin -> provide it via holding?
+    }
+}
+rootProject.name = "ProtobufTest"
+include ':app'
